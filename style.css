@@ -1,18 +1,84 @@
-#custom-button {
-  padding: 10px;
-  color: white;
-  background-color: #009578;
-  border: 1px solid #000;
+body {
+  font-family: serif;
+  background-color: #333;
+  color: #fff;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+header {
+  padding: 50px;
+}
+
+header h1 {
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 60px;
+  white-space: nowrap;
+}
+
+main {
+  max-width: 1000px;
+  width: 100%;
+  margin: 50px auto;
+}
+
+.contents li {
+  position: relative;
+  list-style: none;
+}
+
+.contents li:not(:first-of-type) {
+  margin-top: 200px;
+}
+
+.contents li:nth-of-type(odd) .contentsText {
+  right: 0;
+}
+
+.contents li:nth-of-type(even) .contentsText {
+  align-items: flex-start;
+}
+
+.contents li:nth-of-type(even) img {
+  margin-left: auto;
+}
+
+.contentsText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: absolute;
+  top: 40px;
+}
+
+.contents h2 {
+  font-size: 50px;
+  font-weight: bold;
+  white-space: normal;
+  background-color: rgba(20, 20, 20, 0.8);
+  padding: 10px 20px;
+  line-height: 1.4;
+  letter-spacing: 0.05em;
   border-radius: 5px;
-  cursor: pointer;
 }
 
-#custom-button:hover {
-  background-color: #00b28f;
+.contents p {
+  line-height: 1.6;
+  background-color: #555;
+  font-style: 14px;
+  max-width: 340px;
+  padding: 15px;
+  margin-top: 30px;
+  border-radius: 5px;
 }
 
-#custom-text {
-  margin-left: 10px;
-  font-family: sans-serif;
-  color: #aaa;
+.contents img {
+  width: 65%;
+  display: block;
+  border-radius: 5px;
 }
