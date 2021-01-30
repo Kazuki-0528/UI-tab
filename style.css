@@ -108,7 +108,7 @@ main .contents li.show img {
 }
 
 .contents li:not(:first-of-type) {
-  margin-top: 200px;
+  margin-top: 100px;
 }
 
 .contents li:nth-of-type(odd) .contentsText {
@@ -134,10 +134,11 @@ main .contents li.show img {
   align-items: flex-end;
   position: absolute;
   top: 40px;
+  font-family: "Sawarabi Mincho", sans-serif;
 }
 
 .contents h2 {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: bold;
   white-space: normal;
   background-color: rgba(20, 20, 20, 0.8);
@@ -154,7 +155,7 @@ main .contents li.show img {
   line-height: 1.6;
   background-color: #555;
   font-style: 14px;
-  max-width: 340px;
+  max-width: 430px;
   padding: 15px;
   margin-top: 30px;
   border-radius: 5px;
