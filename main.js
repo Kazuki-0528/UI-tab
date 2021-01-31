@@ -1,5 +1,6 @@
 const targetElement = document.querySelectorAll(".animationTarget");
 const animationTargetElements = document.querySelectorAll(".textAnimation");
+const showElements = document.querySelectorAll(".animation-target");
 
 for (let i = 0; i < animationTargetElements.length; i++) {
   const targetElement = animationTargetElements[i];
@@ -35,6 +36,17 @@ document.addEventListener("scroll", function () {
       targetElement[i].clientHeight * 0.6;
     if (window.innerHeight > getElementDistance) {
       targetElement[i].classList.add("show");
+    }
+  }
+});
+
+window.addEventListener("scroll", function () {
+  for (let i = 0; i < showElements.length; i++) {
+    const getElementDistance =
+      showElements[i].getBoundingClientRect().top +
+      showElements[i].clientHeight * 0.5;
+    if (window.innerHeight > getElementDistance) {
+      showElements[i].classList.add("show");
     }
   }
 });

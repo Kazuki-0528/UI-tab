@@ -171,3 +171,109 @@ main .contents li.show img {
   opacity: 0;
   transition: 1s 0.5s;
 }
+
+/* スクロールアニメーション カーテン */
+.educartion {
+  width: 500px;
+  height: 200px;
+  margin-top: 100px;
+}
+
+.bigText {
+  font-size: 1.7rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.educartion > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #555;
+}
+
+.educartion > ul > li {
+  line-height: 30px;
+  font-family: "Sawarabi Mincho", sans-serif;
+  letter-spacing: 1px;
+}
+
+.picture {
+  width: 700px;
+  height: 500px;
+  margin-top: 100px;
+}
+
+.picture > div {
+  height: 100%;
+  background-image: url(img/undraw_reading_list_4boi.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.picture:nth-of-type(even) {
+  margin-left: auto;
+}
+
+.animation-target {
+  position: relative;
+  overflow: hidden;
+}
+
+.animation-target > ul,
+.animation-target > div {
+  opacity: 0;
+}
+
+@keyframes showElements {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animation-target.show > ul,
+.animation-target.show > div {
+  animation: showElements 0.01s 0.9s forwards;
+}
+
+.animation-target::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(20, 20, 20, 0.8);
+  transform: translateX(-100%);
+}
+
+@keyframes showMask {
+  0% {
+    transform: translateX(-100%);
+  }
+  45%,
+  55% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animation-target.show::before {
+  animation: showMask 1.8s forwards;
+}
