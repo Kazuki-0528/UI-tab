@@ -222,9 +222,25 @@ main .contents li.show img {
   margin-top: 100px;
 }
 
-.picture > div {
+.picture > .reading {
   height: 100%;
   background-image: url(img/undraw_reading_list_4boi.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.picture > .work1 {
+  height: 100%;
+  background-image: url(img/portfolio.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.picture > .work2 {
+  height: 100%;
+  background-image: url(img/nagomi.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
