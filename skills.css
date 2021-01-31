@@ -2,25 +2,6 @@
   padding-top: 20px;
 }
 
-.header {
-  text-align: center;
-  color: #fff;
-  padding: 1rem;
-  position: relative;
-}
-
-.header::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 4px;
-  width: 100px;
-  background-color: #25c5ff;
-  border-radius: 2px;
-}
-
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
