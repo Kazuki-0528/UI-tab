@@ -1,4 +1,4 @@
 ## 概要
 
 プロフィール<br>
-https://sad-blackwell-cbb8f9.netlify.app/
+https://kazuki-0528.github.io/kazuki_profile/
