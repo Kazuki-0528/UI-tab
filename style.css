@@ -244,6 +244,14 @@ main .contents li.show img {
   background-position: center;
 }
 
+.picture > .work3 {
+  height: 100%;
+  background-image: url(img/help_travel.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .picture:nth-of-type(even) {
   margin-left: auto;
 }
