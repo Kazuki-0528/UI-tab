@@ -513,11 +513,11 @@ main .contents li.show img {
     margin-top: 20px;
   }
   .animationTarget.show > img {
-    width: 50%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
   }
   .contents h2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 6px 13px;
     line-height: 1;
     letter-spacing: 0.04em;
