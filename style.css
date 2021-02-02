@@ -496,7 +496,7 @@ main .contents li.show img {
 }
 @media (max-width: 590px) {
   .textAnimation {
-    font-size: 40px;
+    font-size: 35px;
     letter-spacing: 0.1em;
   }
   .textAnimation:not(:first-of-type) {
