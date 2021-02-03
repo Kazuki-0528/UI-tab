@@ -214,6 +214,17 @@ main .contents li.show img {
   letter-spacing: 1px;
 }
 
+.educartion > ul > li > a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+.educartion > ul > li > a:hover {
+  text-decoration: none;
+  color: #3498dbcb;
+  border-bottom: 1px solid #3498dbcb;
+}
+
 .picture {
   width: 700px;
   height: 500px;
@@ -246,7 +257,7 @@ main .contents li.show img {
 
 .picture > .work3 {
   height: 100%;
-  background-image: url(img/helptravel.jpg);
+  background-image: url(img/Todogame.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
