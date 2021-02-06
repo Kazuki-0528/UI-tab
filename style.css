@@ -523,7 +523,7 @@ main .contents li.show img {
     margin-top: 170px;
   }
   .bottom-text {
-    margin-top: 20px;
+    margin-top: 90px;
     font-size: 13px;
     margin-bottom: 20px;
   }
@@ -534,7 +534,6 @@ main .contents li.show img {
     width: 60%;
     height: 60%;
   }
-
   .contents h2 {
     font-size: 1rem;
     padding: 6px 13px;
