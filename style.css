@@ -511,14 +511,21 @@ main .contents li.show img {
     letter-spacing: 0.1em;
   }
   .textAnimation:not(:first-of-type) {
-    margin-top: 140px;
+    margin-top: 50px;
+  }
+  .contents li {
+    margin-top: 50px;
+  }
+  ul.contents {
+    padding: 0;
   }
   .contents li:not(:first-of-type) {
-    margin-top: 250px;
+    margin-top: 170px;
   }
   .bottom-text {
-    margin-top: 200px;
+    margin-top: 20px;
     font-size: 13px;
+    margin-bottom: 20px;
   }
   .animation-target {
     margin-top: 20px;
@@ -527,6 +534,7 @@ main .contents li.show img {
     width: 60%;
     height: 60%;
   }
+
   .contents h2 {
     font-size: 1rem;
     padding: 6px 13px;
@@ -549,10 +557,20 @@ main .contents li.show img {
     font-size: 12px;
     line-height: 13px;
   }
+  .animation-target {
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  .animation-target:not(:first-of-type) {
+    margin-top: 10px;
+  }
   .picture {
-    width: 300px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
     margin-top: 50px;
+  }
+  .picture:nth-of-type(even) {
+    margin: 0 auto;
   }
   .bottom-contact {
     font-size: 13px;
