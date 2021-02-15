@@ -1,8 +1,8 @@
-@charset "UTF-8";
 body {
   font-family: "Dosis", sans-serif;
   color: #fff;
-  background-image: radial-gradient(circle at top right, #333, transparent), radial-gradient(circle at 20% 80%, #333, transparent);
+  background-image: radial-gradient(circle at top right, #333, transparent),
+    radial-gradient(circle at 20% 80%, #333, transparent);
 }
 
 canvas {
@@ -14,8 +14,7 @@ canvas {
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .textAnimation {
@@ -30,33 +29,10 @@ canvas {
   margin-top: 20px;
 }
 
-@-webkit-keyframes showTextFromBottom {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(60px);
-            transform: translateY(60px);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes showTextFromBottom {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(60px);
-            transform: translateY(60px);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes showTextFromTop {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-60px);
-            transform: translateY(-60px);
+    transform: translateY(60px);
   }
   100% {
     opacity: 1;
@@ -66,8 +42,7 @@ canvas {
 @keyframes showTextFromTop {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-60px);
-            transform: translateY(-60px);
+    transform: translateY(-60px);
   }
   100% {
     opacity: 1;
@@ -83,13 +58,11 @@ canvas {
 }
 
 .textAnimation span:nth-of-type(odd) {
-  -webkit-animation: showTextFromTop ease-out 3s backwards;
-          animation: showTextFromTop ease-out 3s backwards;
+  animation: showTextFromTop ease-out 3s backwards;
 }
 
 .textAnimation span:nth-of-type(even) {
-  -webkit-animation: showTextFromBottom ease-out 3s backwards;
-          animation: showTextFromBottom ease-out 3s backwards;
+  animation: showTextFromBottom ease-out 3s backwards;
 }
 
 .name {
@@ -98,13 +71,6 @@ canvas {
 
 header {
   padding: 50px;
-}
-
-@-webkit-keyframes titleAnimation {
-  0% {
-    letter-spacing: 0.3em;
-    opacity: 0;
-  }
 }
 
 @keyframes titleAnimation {
@@ -119,8 +85,7 @@ header h1 {
   font-weight: bold;
   margin-bottom: 60px;
   white-space: nowrap;
-  -webkit-animation: titleAnimation 1.5s;
-          animation: titleAnimation 1.5s;
+  animation: titleAnimation 1.5s;
 }
 
 main {
@@ -141,11 +106,11 @@ main {
   opacity: 1;
   transform: none;
 } */
+
 .contents li.show h2,
 .contents li.show p,
 main .contents li.show img {
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
   opacity: 1;
 }
 
@@ -158,33 +123,22 @@ main .contents li.show img {
 }
 
 .contents li:nth-of-type(even) .contentsText {
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  align-items: flex-start;
 }
 
 .contents li:nth-of-type(odd) img {
-  -webkit-transform: translate(-20px, 20px);
-          transform: translate(-20px, 20px);
+  transform: translate(-20px, 20px);
 }
 
 .contents li:nth-of-type(even) img {
   margin-left: auto;
-  -webkit-transform: translate(20px, 20px);
-          transform: translate(20px, 20px);
+  transform: translate(20px, 20px);
 }
 
 .contentsText {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
   position: absolute;
   top: 40px;
   font-family: "Sawarabi Mincho", sans-serif;
@@ -204,9 +158,7 @@ main .contents li.show img {
   letter-spacing: 0.05em;
   border-radius: 5px;
   opacity: 0;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-  -webkit-transition: 1s;
+  transform: translateY(20px);
   transition: 1s;
 }
 
@@ -219,9 +171,7 @@ main .contents li.show img {
   margin-top: 30px;
   border-radius: 5px;
   opacity: 0;
-  -webkit-transform: translateY(20px);
-          transform: translateY(20px);
-  -webkit-transition: 1s;
+  transform: translateY(20px);
   transition: 1s;
 }
 
@@ -230,7 +180,6 @@ main .contents li.show img {
   display: block;
   border-radius: 5px;
   opacity: 0;
-  -webkit-transition: 1s 0.5s;
   transition: 1s 0.5s;
 }
 
@@ -258,19 +207,10 @@ main .contents li.show img {
   list-style: none;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-radius: 5px;
   background-color: #555;
 }
@@ -344,15 +284,6 @@ main .contents li.show img {
   opacity: 0;
 }
 
-@-webkit-keyframes showElements {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @keyframes showElements {
   0% {
     opacity: 0;
@@ -364,8 +295,7 @@ main .contents li.show img {
 
 .animation-target.show > ul,
 .animation-target.show > div {
-  -webkit-animation: showElements 0.01s 0.9s forwards;
-          animation: showElements 0.01s 0.9s forwards;
+  animation: showElements 0.01s 0.9s forwards;
 }
 
 .animation-target::before {
@@ -378,45 +308,24 @@ main .contents li.show img {
   width: 100%;
   height: 100%;
   background-color: rgba(20, 20, 20, 0.8);
-  -webkit-transform: translateX(-100%);
-          transform: translateX(-100%);
-}
-
-@-webkit-keyframes showMask {
-  0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
-  }
-  45%,
-  55% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
-  }
-  100% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
-  }
+  transform: translateX(-100%);
 }
 
 @keyframes showMask {
   0% {
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
   }
   45%,
   55% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    transform: translateX(0%);
   }
   100% {
-    -webkit-transform: translateX(100%);
-            transform: translateX(100%);
+    transform: translateX(100%);
   }
 }
 
 .animation-target.show::before {
-  -webkit-animation: showMask 1.8s forwards;
-          animation: showMask 1.8s forwards;
+  animation: showMask 1.8s forwards;
 }
 
 /* SNS links */
@@ -432,8 +341,7 @@ main .contents li.show img {
   background-color: #333;
   margin: 10px;
   border-radius: 30%;
-  -webkit-box-shadow: 0 5px 15px -5px #00000070;
-          box-shadow: 0 5px 15px -5px #00000070;
+  box-shadow: 0 5px 15px -5px #00000070;
   color: #3498db;
   overflow: hidden;
   position: relative;
@@ -442,13 +350,11 @@ main .contents li.show img {
 .btn i {
   line-height: 90px;
   font-size: 26px;
-  -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
 }
 
 .btn:hover i {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
   color: #f1f1f1;
 }
 
@@ -458,32 +364,15 @@ main .contents li.show img {
   width: 120%;
   height: 120%;
   background: #3498db;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   left: -110%;
   top: 90%;
 }
 
 .btn:hover::before {
-  -webkit-animation: aaa 0.7s 1;
-          animation: aaa 0.7s 1;
+  animation: aaa 0.7s 1;
   top: -10%;
   left: -10%;
-}
-
-@-webkit-keyframes aaa {
-  0% {
-    left: -110%;
-    top: 90%;
-  }
-  50% {
-    left: 10%;
-    top: -30%;
-  }
-  100% {
-    top: -10%;
-    left: -10%;
-  }
 }
 
 @keyframes aaa {
@@ -533,7 +422,6 @@ main .contents li.show img {
     font-size: 1.8rem;
   }
 }
-
 @media (max-width: 790px) {
   .animationTarget.show > img {
     width: 55%;
@@ -566,7 +454,6 @@ main .contents li.show img {
     font-size: 1.5rem;
   }
 }
-
 @media (max-width: 675px) {
   .textAnimation {
     margin-top: 20px;
@@ -607,7 +494,6 @@ main .contents li.show img {
     font-size: 1rem;
   }
 }
-
 @media (max-width: 640px) {
   .contents h2 {
     font-size: 30px;
@@ -626,7 +512,6 @@ main .contents li.show img {
     line-height: 70px;
   }
 }
-
 @media (max-width: 590px) {
   .textAnimation {
     font-size: 35px;
@@ -704,4 +589,3 @@ main .contents li.show img {
     line-height: 50px;
   }
 }
-/*# sourceMappingURL=style.css.map */
