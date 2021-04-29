@@ -597,10 +597,103 @@ main .bottom_links .btn:hover::before {
   left: -10%;
 }
 
+main .bottom-btn {
+  margin: 30px auto;
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 300px;
+  padding: 1em;
+  cursor: pointer;
+  line-height: 1.4;
+  -webkit-transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), transform 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: color 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), transform 0.3s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  color: #ffffff;
+  border: none;
+  border-width: 0;
+  border-color: transparent;
+  border-radius: 100px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f4c14e), to(#d36950));
+  background-image: linear-gradient(#f4c14e, #d36950);
+}
+
+main .bottom-btn:after, main .bottom-btn:before {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  content: "";
+  -webkit-transition: opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  -webkit-transform: translate(100%, -25%) translateZ(0);
+  transform: translate(100%, -25%) translateZ(0);
+  opacity: 0;
+  border-radius: 50%;
+  background: #009688;
+}
+
+main .bottom-btn:after, main .bottom-btn:before {
+  background: #ffffff;
+}
+
+main .bottom-btn:hover {
+  -webkit-transition: all 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: all 0.5s cubic-bezier(0.02, 0.01, 0.47, 1);
+  -webkit-transform: scale(1.1) translateZ(0);
+  transform: scale(1.1) translateZ(0);
+  color: #ffffff;
+  -webkit-box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+main .bottom-btn:hover:before {
+  -webkit-transition: opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+  -webkit-transform: translate3d(50%, 0, 0) scale(0.9);
+  transform: translate3d(50%, 0, 0) scale(0.9);
+  opacity: 0.15;
+}
+
+main .bottom-btn:hover:after {
+  -webkit-transition: opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1) 0.05s, -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1) 0.05s;
+  transition: opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1) 0.05s, -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1) 0.05s;
+  transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1) 0.05s, opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1) 0.05s;
+  transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1) 0.05s, opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1) 0.05s, -webkit-transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1) 0.05s;
+  -webkit-transform: translate(50%) scale(1.1);
+  transform: translate(50%) scale(1.1);
+  opacity: 0.25;
+}
+
+main .bottom-btn:active {
+  opacity: 0.5;
+}
+
+main .bottom-btn:focus {
+  color: #ffffff;
+}
+
 main .bottom-text {
   text-align: center;
   font-family: "Sawarabi Mincho", sans-serif;
   margin-bottom: 150px;
+}
+
+main .bottom-word {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Sawarabi Mincho", sans-serif;
 }
 
 main .bottom-contact {
