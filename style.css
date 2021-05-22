@@ -211,8 +211,8 @@ header
   border-width: 0;
   border-color: transparent;
   border-radius: 100px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f4c14e), to(#d36950));
-  background-image: linear-gradient(#f4c14e, #d36950);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#323232d0), to(#000000));
+  background-image: linear-gradient(#323232d0, #000000);
 }
 
 .site-header__wrapper .nav__item a:after, .site-header__wrapper .nav__item a:before {
@@ -619,8 +619,8 @@ main .bottom-btn {
   border-width: 0;
   border-color: transparent;
   border-radius: 100px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f4c14e), to(#d36950));
-  background-image: linear-gradient(#f4c14e, #d36950);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#323232d0), to(#000000));
+  background-image: linear-gradient(#323232d0, #000000);
 }
 
 main .bottom-btn:after, main .bottom-btn:before {
